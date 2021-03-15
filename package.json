@@ -1,5 +1,5 @@
 {
-  "name": "@pokusew/pcsclite",
+  "name": "@hidepixel/pcsclite",
   "version": "0.6.0",
   "description": "Bindings over PC/SC to access Smart Cards",
   "keywords": [
@@ -8,13 +8,13 @@
     "pcsclite",
     "smartcards"
   ],
-  "homepage": "https://github.com/pokusew/node-pcsclite#readme",
+  "homepage": "https://github.com/hidepixel/node-pcsclite#readme",
   "bugs": {
-    "url": "https://github.com/pokusew/node-pcsclite/issues"
+    "url": "https://github.com/hidepixel/node-pcsclite/issues"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/pokusew/node-pcsclite.git"
+    "url": "https://github.com/hidepixel/node-pcsclite.git"
   },
   "license": "ISC",
   "author": {
@@ -34,7 +34,8 @@
     "test": "test"
   },
   "scripts": {
-    "install": "node-gyp rebuild",
+    "install": "npx prebuild-install || node-gyp rebuild",
+    "prebuild": "prebuild -t 11.2.0 -t 12.0.0 -r electron",
     "test": "mocha --exit"
   },
   "dependencies": {
@@ -42,6 +43,8 @@
   },
   "devDependencies": {
     "mocha": "^7.0.1",
+    "prebuild": "^10.0.1",
+    "prebuild-install": "^6.0.1",
     "should": "^13.2.3",
     "sinon": "^9.0.0"
   },

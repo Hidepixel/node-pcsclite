@@ -33,3 +33,6 @@ node_modules/
 
 # built Node.js C++ addon
 /build/
+
+# prebuild npm module
+/prebuilds

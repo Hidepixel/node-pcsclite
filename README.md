@@ -1,3 +1,7 @@
+# About this Fork
+
+We use [Electron Builder](https://github.com/electron-userland/electron-builder) to build our Electron Apps. We need the [prebuilds](https://github.com/prebuild/prebuild) so we can build `Windows` binaries in `Linux` with `Wine` via a `Docker image` -> [electron-builder:wine](https://www.electron.build/multi-platform-build#docker)
+
 # node-pcsclite
 
 [![npm](https://img.shields.io/npm/v/@pokusew/pcsclite.svg)](https://www.npmjs.com/package/@pokusew/pcsclite)
